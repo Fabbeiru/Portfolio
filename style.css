@@ -1,0 +1,132 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --bg: powderblue;
+    --blue: #0077BE;
+    --white: #fff;
+    --black: #000;
+    --green: #bfff80;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ---------------- */
+/* ---- NAVBAR ---- */
+/* ---------------- */
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--black);
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.username, .logo {
+    display: none;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-link i {
+    font-size: 2rem;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-item:hover i {
+    color: var(--blue);
+    transition: 600ms;
+}
+
+/* ----------------------- */
+/* ---- MEDIA QUERIES ---- */
+/* ----------------------- */
+@media (min-width: 768px) {
+    main {
+        margin-left: 5rem;
+        padding: 1rem;
+    }
+
+    .navbar {
+        width: 5rem;
+        height: 100vh;
+        position: fixed;
+        transition: width 500ms;
+    }
+    .navbar:hover {
+        width: 16rem;
+    }
+    .navbar:hover .link-text {
+        display: block;
+    }
+
+    .navbar-nav {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .nav-item:last-child {
+        margin-top: auto;
+    }
+
+    .logo {
+        display: block;
+    }
+    .logo img {
+        width: 2.75rem;
+        transition: width 500ms ease;
+    }
+
+    .username {
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        letter-spacing: 0.3ch;
+    }
+    .username-text {
+        margin: 0 0.5rem 0 0;
+        font-size: 1.5rem;
+    }
+    .username i {
+        transform: rotate(0deg);
+        transition: transform 600ms;
+    }
+    .navbar:hover .username i {
+        transform: rotate(-180deg);
+    }
+    .username:hover i {
+        color: var(--blue);
+        transition: 600ms;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+}
