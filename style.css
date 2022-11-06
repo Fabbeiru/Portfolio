@@ -12,17 +12,18 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
 }
 
 /* ---------------- */
 /* ---- NAVBAR ---- */
 /* ---------------- */
-
 .navbar {
     width: 100%;
     height: 5rem;
     background-color: var(--black);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .navbar-nav {
@@ -71,6 +72,7 @@ body {
     main {
         margin-left: 5rem;
         padding: 1rem;
+        overflow: none;
     }
 
     .navbar {
