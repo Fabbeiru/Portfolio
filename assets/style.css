@@ -14,6 +14,7 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--black);
+    overflow-x: hidden;
 }
 
 /* ---------------- */
@@ -57,7 +58,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
 }
 .nav-item {
     display: flex;
@@ -361,6 +361,10 @@ footer {
         max-width: 80%;
         flex-direction: row;
         gap: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 3rem;
     }
 }
 
