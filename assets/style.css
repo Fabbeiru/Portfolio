@@ -247,7 +247,7 @@ header {
 
 .socials-wrapper {
     padding: 0;
-    margin: 2rem 0 1rem;
+    margin: 2.5rem 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,21 +428,26 @@ header {
     top: 15px;
     left: -60px;
 }
-.row section .details,
+.row section .job-details,
 .row section .bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
-.row section .details .title{
+.row section .job-details .job-title h3{
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
 }
-.row section .details span {
+.row section .job-details .job-title span{
+    font-size: 0.9rem;
+    color: gray;
+}
+.row section .job-details span {
     text-align: end;
 }
-.row section p{
-    margin: 10px 0 17px 0;
+.row section .description {
+    padding: 0.9rem 0 0 1.25rem;
 }
 
 /* ---------------- */
