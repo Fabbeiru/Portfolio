@@ -435,11 +435,11 @@ header {
     justify-content: space-between;
     gap: 1rem;
 }
-.row section .job-details .job-title h3{
+.row section .job-details .title {
     font-size: 22px;
     font-weight: 700;
 }
-.row section .job-details .job-title span{
+.row section .company-name {
     font-size: 0.9rem;
     color: gray;
 }
@@ -448,6 +448,13 @@ header {
 }
 .row section .description {
     padding: 0.9rem 0 0 1.25rem;
+}
+
+/* -------------------------- */
+/* ---- PROJECTS SECTION ---- */
+/* -------------------------- */
+#projects {
+    width: 100%;
 }
 
 /* ---------------- */
