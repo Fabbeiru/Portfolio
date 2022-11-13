@@ -78,6 +78,7 @@ nav {
 .nav-item:hover {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
 }
 
 /* ---------------- */
@@ -392,6 +393,12 @@ header {
     transform: rotate(45deg);
 }
 
+.row-1 section {
+    box-shadow: 8px 8px rgba(255, 255, 255, 0.2);
+}
+.row-2 section {
+    box-shadow: 8px 8px rgba(255, 255, 255, 0.2);
+}
 .row-1 section::before{
     left: -7px;
 }
@@ -435,7 +442,7 @@ header {
     justify-content: space-between;
     gap: 1rem;
 }
-.row section .job-details .title {
+.title {
     font-size: 22px;
     font-weight: 700;
 }
@@ -455,16 +462,83 @@ header {
 /* -------------------------- */
 #projects {
     width: 100%;
+    padding: 50px 0 60px;
+    background-color: lightgray;
+}
+#projects h2 {
+    text-align: center;
+}
+
+.projects-wrapper {
+    width: 90%;
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.projects-wrapper .project {
+    max-width: 350px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+    background-color: var(--white);
+}
+
+.project span {
+    font-size: 0.9rem;
+    color: var(--blue);
+}
+.project .img {
+    width: 150px;
+    height: 150px;
+    margin: 2rem 0 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--blue);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project .movie-app-img {
+    background-image: url("./MovieApp.png");
+}
+.project .cube-run-img {
+    background-image: url("./CubeRun.png");
+}
+.project .pca-img {
+    background-image: url("./PCA.png");
+}
+.project .gc-activa-img {
+    background-image: url("./GCActiva.png");
+}
+.project p {
+    margin-top: 1rem;
+}
+.project a {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+.project a:hover {
+    background-color: var(--black);
+    transform: scale(1.1);
 }
 
 /* ---------------- */
 /* ---- FOOTER ---- */
 /* ---------------- */
 footer {
-    padding: 1.5rem 3rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 3rem 0;
     color: var(--white);
     text-align: center;
     background-color: var(--black);
@@ -496,6 +570,9 @@ footer {
     .experience-wrapper .row section {
         width: calc(50% - 80px);
     }
+    .row-1 section {
+        box-shadow: -8px 8px rgba(255, 255, 255, 0.2);
+    }
     .row-1 section::before{
       right: -7px;
       left: auto;
@@ -503,6 +580,10 @@ footer {
     .row-1 section .icon{
       right: -60px;
       left: auto;
+    }
+
+    .projects-wrapper {
+        max-width: 85%;
     }
 }
 
